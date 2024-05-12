@@ -3,4 +3,5 @@
 logs
 plugins
 config
-/dags/__pycache__
+/dags/__pycache__/
+
