@@ -16,6 +16,7 @@ with DAG('group_dag_groups',
     args={'start_date':dag.start_date,'schedule_interval':dag.schedule_interval,'catchup':dag.catchup}
  
     downloads = downloads_tasks()
+    
     check_files = BashOperator(
         task_id='check_files',
         bash_command='sleep 10'

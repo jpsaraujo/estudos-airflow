@@ -2,7 +2,7 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.subdag import SubDagOperator
 from subdags.subdag_downloads import subdag_downloads
-from dags.subdags.subdag_transforms import subdag_transforms
+from subdags.subdag_transforms import subdag_transforms
  
 from datetime import datetime
  
